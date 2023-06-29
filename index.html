@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>oogle Internet Radio</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/play.css">
+	<link rel="shortcut icon" href="https://radio.co/favicon.png" type="image/png">
+</head>
+<body>
+	<marquee direction="right">Oogle Internet Radio Player!</marquee>
+	<!-- The player decleration -->
+	<div class="radioplayer"
+	data-src="http://streaming.radio.co/sced7c0e79/listen"
+	data-autoplay="false"
+	data-playbutton="true"
+	data-volumeslider="true"
+	data-elapsedtime="true"
+	data-nowplaying="true"
+	data-showplayer="true"
+	data-volume="100"></div>
+</body>
+
+<!-- Include the libraries -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://public.radio.co/playerapi/jquery.radiocoplayer.min.js"></script>
+<script>
+
+//initialise the plugin with the element
+$('.radioplayer').radiocoPlayer();
+
+</script>
+</html>
